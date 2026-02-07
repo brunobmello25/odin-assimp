@@ -1,6 +1,12 @@
 package assimp
 
-foreign import lib "assimp-vc140-mt.lib";
+when ODIN_OS == .Windows {
+	foreign import lib "assimp-vc140-mt.lib"
+} else when ODIN_OS == .Linux {
+	foreign import lib "system:assimp"
+} else {
+	#panic("Unsupported platform for assimp bindings. Currently supports: Windows, Linux")
+}
 
 @(default_calling_convention="c")
 foreign lib {
