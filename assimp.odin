@@ -84,8 +84,8 @@ aiBool :: enum int {
 }
 
 aiString :: struct {
-	length : int,
-	data : u8,
+	length : u32,
+	data : [1024]u8,
 }
 
 aiReturn :: enum u32 {
