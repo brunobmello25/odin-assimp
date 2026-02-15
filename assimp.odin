@@ -398,7 +398,7 @@ aiNode :: struct {
 	mParent : ^aiNode,
 	mNumChildren : u32,
 	mChildren : ^^aiNode,
-	mNumMeshes : int,
+	mNumMeshes : u32,
 	mMeshes : ^u32,
 }
 
