@@ -1,3 +1,7 @@
+# DONT USE THIS FORK
+
+This fork is DEFINITELY not meant for production. I only forked it because of a hobby project I'm making where i needed to make some changes. I'll break APIs all the time, and I'll probably eventually ditch this binding and switch to the native cgltf vendor supported by odin
+
 ## Odin assimp bindings
 
 Cross-platform Odin bindings for Assimp (tested with v4.1.0+)
